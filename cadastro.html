@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviço</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="icons/register.png" height="40px" width="40px" alt="Register Icon"> Cadastro de Serviço</h1>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <div>
+                <h2>Dados Pessoais</h2>
+            </div>
+            <p>
+                <label for="name">Nome do Cliente:</label>
+                <input id="name" type="text" placeholder="Nome" required>
+            </p>
+            <p>
+                <label for="cpf">CPF do Cliente:</label>
+                <input id="cpf" type="text" placeholder="CPF" required>
+            </p>
+            <div>
+                <h2><b>Endereço</b></h2>
+
+                <p>
+                    <label for="adress">Logradouro:</label>
+                    <input id="adress" type="text" placeholder="Logradouro" required>
+                </p>
+                <p>
+                    <label for="cep">CEP:</label>
+                    <input id="cep" type="text" placeholder="CEP" required>
+                </p>
+                <p>
+                    <label for="city">Cidade:</label>
+                    <input id="city" type="text" placeholder="Cidade" required>
+                </p>
+                <p>
+                    <label for="state">Estado:</label>
+                    <select name="states" id="states" required>
+                        <option value="default" selected>Escolha Seu Estado</option>
+                        <option value="ccre">AC</option>
+                        <option value="alagoas">AL</option>
+                        <option value="amapa">AP</option>
+                        <option value="amazonas">AM</option>
+                        <option value="bahia">BA</option>
+                        <option value="ceara">CE</option>
+                        <option value="distritofederal">DF</option>
+                        <option value="espiritosanto">ES</option>
+                        <option value="goias">GO</option>
+                        <option value="maranhao">MA</option>
+                        <option value="matogrosso">MT</option>
+                        <option value="matogrossodosul">MS</option>
+                        <option value="minasgerais">MG</option>
+                        <option value="para">PA</option>
+                        <option value="paraiba">PB</option>
+                        <option value="parana">PR</option>
+                        <option value="pernambuco">PE</option>
+                        <option value="piaui">PI</option>
+                        <option value="riodejaneiro">RJ</option>
+                        <option value="riograndedonorte">RN</option>
+                        <option value="riograndedosul">RS</option>
+                        <option value="rondonia">RO</option>
+                        <option value="roraima">RR</option>
+                        <option value="santacatarina">SC</option>
+                        <option value="saopaulo">SP</option>
+                        <option value="sergipe">SE</option>
+                        <option value="tocatins">TO</option>
+                    </select>
+                </p>
+            </div>
+            <p>
+                <h2><label for="model"><b>Modelo do Celular:</b></label></h2>
+                <p>
+                    <select name="model" id="model">
+                        <option value="default" selected>Selecione uma Opção Abaixo</option>
+                        <option value="samsungM">Samsung Galaxy M53 5G</option>
+                        <option value="samsungS">Samsung Galaxy S23</option>
+                        <option value="iphone">Iphone 8 Ou Superior</option>
+                        <option value="redmi">Redmi Note 10S</option>
+                    </select>
+                </p>
+            </p>
+            <p>
+                <h2><label for="description"><b>Relato do Defeito:</b></label></h2>
+                <textarea name="description" id="description" cols="80" rows="10"
+                placeholder="Digite seu relato aqui"></textarea>
+            </p>
+            <p>
+                <h2><label for="image"><b>Imagem do Dispositivo:</b></label></h2>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg">
+            </p>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="homepage.html"><button>Voltar</button></a>
+    </footer>
+</body>
+
+</html>
